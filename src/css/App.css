@@ -1,0 +1,41 @@
+#root {
+  width: 100%;
+  padding: 50px;
+  font-size: 1em;
+}
+
+/* for proper color in grid selection (quiz categories) */
+:root {
+  --selected-color-light: #BFC9CA;
+  /* Light theme selected color */
+  --selected-color-dark: #34495E;
+  /* Dark theme selected color */
+}
+
+[data-bs-theme="light"] .selected {
+  background-color: var(--selected-color-light);
+}
+
+[data-bs-theme="dark"] .selected {
+  background-color: var(--selected-color-dark);
+}
+
+.row-height {
+  height: 70px;
+}
+
+.rounded-card {
+  border-radius: 25px;
+}
+
+.rounded-header {
+  border-radius: 25px 25px 0 0;
+}
+
+.rounded-list {
+  border-radius: 0 0 25px 25px;
+}
+
+.rounded-item {
+  border-radius: 25px;
+}
